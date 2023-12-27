@@ -9,7 +9,7 @@
     font-family: 'Raleway', 'sans-serif';
 }
 
-.row {
+.row, .services__row {
     max-width: 1300px;
     width: 100%;
     margin: 0 auto;
@@ -19,18 +19,45 @@
     padding: 24px;
 }
 
-i, a {
+a {
     color: #242424;
+}
+
+p {
+    line-height: 1.5;
+}
+
+i {
+    color: gold;
+    font-size: 26px;
+    padding: 8px;
 }
 
 h2 {
     color: #242424;
     font-size: 24px;
     font-weight: 600;
+    margin-bottom: 12px;
 }
 
 #services, #testimonials {
     background-color: #242424;
+}
+
+span {
+    color: gold;
+    font-weight: 600;
+}
+
+.white__span {
+    color: goldenrod;
+    font-weight: 700;
+}
+
+.cta {
+    color: white;
+    border-bottom: 2px solid white;
+    font-weight: bold;
 }
 
 
@@ -53,7 +80,7 @@ nav {
 }
 
 .nav__link {
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .nav__logo {
@@ -64,18 +91,20 @@ nav {
 
 .nav__link--primary {
     color: white;
-    font-weight: 600;
+    font-weight: 700;
     background-color: #242424;
     border-radius: 32px;
     padding: 16px;
 }
 
 .nav__link:hover {
-    border-bottom: 2px solid #242424;
+    border-bottom: 2px solid goldenrod;
+    color: goldenrod;
 }
 
 .nav__link--primary:hover {
-    background-color: rgb(72, 79, 104)
+    background-color: rgb(72, 79, 104);
+    background-color: goldenrod;
 }
 
 
@@ -87,8 +116,13 @@ nav {
     text-align: center;
 }
 
+.slideshow {
+    
+}
+
 .services__row {
     display: flex;
+    align-items: center;
 }
 
 .services__imgs {
@@ -104,10 +138,56 @@ nav {
     margin-left: 96px;
     align-items: center;
     justify-content: center;
+    padding-top: 12px;
 }
 
 .service {
-    margin-top: 24px;
+
+    margin-bottom: 12px;
+}
+
+.services__title {
+    color: white;
+    margin-bottom: 24px;
+    font-size: 35px;
+}
+
+.service__para {
+    font-size: 14px;
+}
+
+.service__heading {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+
+/* FEATURES */ 
+
+.features__text {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.features--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+.feature {
+    width: calc(100% / 3);
+    padding: 0 16px;
+}
+
+.feature__heading {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+#features {
+    padding: 48px;
 }
 
 /* FOOTER */ 
