@@ -72,7 +72,7 @@ span {
 
 
 nav {
-    height: 80px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
 }
@@ -93,7 +93,7 @@ nav {
 }
 
 .nav__logo {
-    max-width: 290px;
+    max-width: 350px;
     width: 100%;
     padding: 8px;
 }
@@ -134,7 +134,7 @@ nav {
 .slideshow {
     width: 100%;
     max-width: 800px;
-    height: 700px;
+    height: 650px;
     overflow: hidden;
     border: 5px solid white;
     border-radius: 8px;
@@ -145,16 +145,59 @@ nav {
     max-width: 800px;
     width: 100%;
     display: flex;
-    animation: slide 20s infinite;
+    animation: slide 32s infinite;
 }
 
-keyframes slide{
+@keyframes slide {
     0% {
         transform: translateX(0);
     }
 
-    25% {
+    10% {
         transform: translateX(0);
+    }
+
+
+    20% {
+        transform: translateX(-100%);
+    }
+
+    30% {
+        transform: translateX(-100%);
+    }
+
+
+    40% {
+        transform: translateX(-200%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+
+    60% {
+        transform: translateX(-300%);
+    }
+
+    70% {
+        transform: translateX(-300%);
+    }
+
+    80% {
+        transform: translateX(-400%);
+    }
+
+    90% {
+        transform: translateX(-400%);
+    }
+
+    97.5% {
+        transform: translateX(-500%);
+    }
+
+    100% {
+        translate: transform (0);
     }
 }
 
@@ -397,6 +440,9 @@ keyframes slide{
 
 .contact__row {
     display: flex;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
     margin-bottom: 32px;
     justify-content: space-around;
 }
@@ -426,11 +472,20 @@ keyframes slide{
 }
 
 .methods--wrapper {
-    max-width: 700px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 86px;
+}
+
+.contact__left {
+    width: 100%;
+    max-width: 800px;
+}
+
+.contact__img {
+    width: 100%;
 }
 
 .address, .phone, .email, .contact__insta, .contact__fb {
@@ -477,6 +532,7 @@ keyframes slide{
 .work {
     display: flex;
     align-items: center;
+    padding: 4px 0;
 }
 
 .work__icon {
