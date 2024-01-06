@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HE</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.1/css/all.min.css" integrity="sha512-/RUbtHakVMJrg1ILtwvDIceb/cDkk97rWKvfnFSTOmNbytCyEylutDqeEr9adIBye3suD3RfcsXLOLBqYRW4gw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -34,6 +35,22 @@
                         <li>Contact Us</li>
                         </a>
                     </ul>
+                    <button class="nav__btn" onclick="openMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="menu__backdrop">
+                        <button class="nav__btn nav__btn--close" onclick="closeMenu()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <ul class="backdrop__list">
+                            <li class="backdrop__link"><a class="backdrop__link" href="#hero">Home</a></li>
+                            <li class="backdrop__link"><a class="backdrop__link" href="#services">Services</a></li>
+                            <li class="backdrop__link"><a class="backdrop__link" href="#testimonials">Testimonials</a></li>
+                            <li class="backdrop__link"><a class="backdrop__link" href="#features">Why Us?</a></li>
+                            <li class="backdrop__link"><a class="backdrop__link" href="#works">Full Works List</a></li>
+                            <li class="backdrop__link backdrop__link--primary"><a class="backdrop__link backdrop__link--primary" href="#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
     </section>
@@ -47,8 +64,8 @@
                         <img class="slideshow__img" src="assets/drive way.png" alt="">
                         <img class="slideshow__img" src="assets/hanging.png" alt="">
                         <img class="slideshow__img" src="assets/CABIN.jpg" alt="">
-                        <img class="slideshow__img" src="assets/Spotlights.png" alt="">
-                        <img class="slideshow__img" src="assets/EV Charger.png" alt="">
+                        <img class="slideshow__img" src="assets/Outdoor lighting install.png" alt="">
+                        <img class="slideshow__img" src="assets/Domestic CCU.png" alt="">
                     </div>
                 </div>
                 <div class="hero__text">
@@ -139,9 +156,9 @@
 
     <section id="features">
         <div class="features__container">
+            <h2 class="features__title">Why Chose <span class="white__span">Haining Electrical?</span></h2>
             <div class="row">
                 <div class="features__text">
-                    <h2 class="features__title">Why Chose <span class="white__span">Haining Electrical?</span></h2>
                     <div class="features--wrapper">
                         <div class="feature">
                             <i class="fas fa-user-clock feature__icon"></i>
@@ -188,11 +205,11 @@
                         <p class="contact__para">2 Invicta Park, Sandpit Road, Dartford, DA1 5BU</p>
                     </div>
                     <div class="method">
-                        <i class="fab fa-instagram contact__insta"></i>
+                        <i class="fab fa-instagram instagram"></i>
                         <p class="contact__para">instagram.com/hainingelectrical</p>
                     </div>
                     <div class="method">
-                        <i class="fab fa-facebook-square contact__fb"></i>
+                        <i class="fab fa-facebook-square facebook"></i>
                         <p class="contact__para">facebook.com/hainingelectrical</p>
                     </div>
                 </div>
@@ -237,7 +254,7 @@
                         </div>
                         <div class="work">
                             <i class="fas fa-check work__icon"></i>
-                            <p class="works__example">Consumer Units/Fuseboards</p>
+                            <p class="works__example">CCUs/Fuseboards</p>
                         </div>
                         <div class="work">
                             <i class="fas fa-check work__icon"></i>
