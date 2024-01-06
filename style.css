@@ -36,6 +36,11 @@ i {
     color: gold;
     font-size: 26px;
     padding: 8px;
+    transition: transform 300ms ease;
+}
+
+i:hover {
+    transform: scale(1.2);
 }
 
 h2 {
@@ -680,6 +685,15 @@ nav {
     color: white;
     font-size: 38px;
     padding: 0 24px;
+    transition: all 250ms ease;
+}
+
+.insta:hover {
+    transform: scale(1.2);
+}
+
+.fb:hover {
+    transform: scale(1.2);
 }
 
 
@@ -898,6 +912,11 @@ nav {
     .hero__text {
         width: 100%;
         max-width: 390px;
+        margin-top: 12px;
+    }
+
+    .hero__title {
+        font-size: 26px;
     }
 
     .features__title, .testimonials__title, .services__title, .contact__heading {
@@ -928,12 +947,13 @@ nav {
         align-items: center;
     }
 
+    .nav__logo {
+        width: 100%;
+        max-width: 290px;
+    }
+
     .hero__button {
         font-size: 16px;
-    }
-    
-    .hero__title {
-        font-size: 20px;
     }
 
     .hero__para {
