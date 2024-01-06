@@ -644,6 +644,7 @@ nav {
 
 .work__icon {
     color: rgb(91, 211, 91);
+    color: goldenrod;
 }
 
 .works__example {
@@ -992,6 +993,6 @@ nav {
     }
 
     .contact__para {
-        font-size: 14px;
+        font-size: 18px;
     }
 }
