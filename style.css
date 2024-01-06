@@ -13,6 +13,11 @@ html {
     scroll-behavior: smooth;
 }
 
+a[href^=tel] {
+    color: inherit;
+    text-decoration: none;
+}
+
 .row, .services__row, .hero__row, .contact__row, .testimonials__row, .works__row {
     max-width: 1300px;
     width: 100%;
@@ -957,7 +962,7 @@ nav {
     }
 
     .hero__para {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .trade--check {
