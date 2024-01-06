@@ -128,6 +128,15 @@ nav {
     display: none;
 }
 
+.nav__btn--close {
+    display: flex;
+    transition: all 200ms ease;
+}
+
+.nav__btn--close:hover {
+    transform: scale(1.2);
+}
+
 .fa-bars {
     color: #242424;
     font-size: 40px;
