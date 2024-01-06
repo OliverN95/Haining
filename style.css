@@ -155,14 +155,26 @@ nav {
     background-color: #242424;
     top: 0;
     left: 0;
-    right: 0;
     bottom: 0;
+    right: 0;
     z-index: 100;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    display: none;
+    transition: all 300ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu--open .menu__backdrop {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu--open {
+    overflow-y: hidden;
+    max-height: 100vh;
 }
 
 .backdrop__list {
@@ -172,8 +184,8 @@ nav {
 
 .backdrop__link {
     color: white;
-    font-size: 40px;
-    padding: 36px 0;
+    font-size: 32px;
+    padding: 22px 0;
     transition: all 300ms ease;
 }
 
@@ -184,14 +196,11 @@ nav {
 .backdrop__link--primary {
     color: gold;
     font-weight: 700;
+    margin-top: 16px;
 }
 
 .backdrop__link--primary:hover {
     border-bottom: none;
-}
-
-.menu--open .menu__backdrop {
-    display: flex;
 }
 
 
@@ -661,7 +670,7 @@ nav {
 .insta, .fb {
     color: white;
     font-size: 38px;
-    margin-left: 32px;
+    padding: 0 24px;
 }
 
 
@@ -684,7 +693,7 @@ nav {
     }
 
     .nav__btn {
-        display: flex;
+        display: block;
         align-items: center;
     }
 
